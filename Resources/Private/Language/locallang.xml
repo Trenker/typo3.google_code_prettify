@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>common</type>
+		<description>Language labels for the extension google_code_prettify</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flexform.settings">Settings</label>
+			<label index="flexform.settings.code">Code</label>
+			<label index="flexform.settings.language">Language</label>
+			<label index="flexform.settings.language.0">Auto Detect</label>
+			<label index="flexform.settings.language.bsh">Bash</label>
+			<label index="flexform.settings.language.c">C</label>
+			<label index="flexform.settings.language.cpp">C++</label>
+			<label index="flexform.settings.language.cs">C#</label>
+			<label index="flexform.settings.language.html">HTML</label>
+			<label index="flexform.settings.language.java">Java</label>
+			<label index="flexform.settings.language.js">Javascript</label>
+			<label index="flexform.settings.language.perl">Perl</label>
+			<label index="flexform.settings.language.rb">Ruby</label>
+			<label index="flexform.settings.language.sh">Shell</label>
+			<label index="flexform.settings.language.xml">XML</label>
+			<label index="flexform.settings.language.xsl">XSL</label>
+			<label index="flexform.settings.language.css">CSS</label>
+			<label index="flexform.settings.language.lisp">Lisp</label>
+			<label index="flexform.settings.language.lua">Lua</label>
+			<label index="flexform.settings.language.sql">SQL</label>
+			<label index="flexform.settings.language.tex">Tex</label>
+			<label index="flexform.settings.language.wiki">Wiki</label>
+			<label index="flexform.settings.language.yaml">YAML</label>
+			<label index="plugin.title">Prettified Code</label>
+			<label index="plugin.description">Insert code and let it be prettified by the a lightweight client library.</label>
+		</languageKey>
+	</data>
+</T3locallang>

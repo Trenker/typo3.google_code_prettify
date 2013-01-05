@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.code>
+						<TCEforms>
+							<label>LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.code</label>
+							<config>
+								<type>text</type>
+								<rows>15</rows>
+								<cols>40</cols>
+							</config>
+						</TCEforms>
+					</settings.code>
+					<settings.language>
+						<TCEforms>
+							<label>LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.0</numIndex>
+										<numIndex index="1" />
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.bsh</numIndex>
+										<numIndex index="1">bsh</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.c</numIndex>
+										<numIndex index="1">c</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.cpp</numIndex>
+										<numIndex index="1">cpp</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.cs</numIndex>
+										<numIndex index="1">cs</numIndex>
+									</numIndex>
+									<numIndex index="5">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.css</numIndex>
+										<numIndex index="1">css</numIndex>
+									</numIndex>
+									<numIndex index="6">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.html</numIndex>
+										<numIndex index="1">html</numIndex>
+									</numIndex>
+									<numIndex index="7">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.java</numIndex>
+										<numIndex index="1">java</numIndex>
+									</numIndex>
+									<numIndex index="8">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.js</numIndex>
+										<numIndex index="1">js</numIndex>
+									</numIndex>
+									<numIndex index="9">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.lisp</numIndex>
+										<numIndex index="1">lisp</numIndex>
+									</numIndex>
+									<numIndex index="10">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.lua</numIndex>
+										<numIndex index="1">lua</numIndex>
+									</numIndex>
+									<numIndex index="11">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.perl</numIndex>
+										<numIndex index="1">perl</numIndex>
+									</numIndex>
+									<numIndex index="12">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.rb</numIndex>
+										<numIndex index="1">rb</numIndex>
+									</numIndex>
+									<numIndex index="13">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.sh</numIndex>
+										<numIndex index="1">sh</numIndex>
+									</numIndex>
+									<numIndex index="14">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.sql</numIndex>
+										<numIndex index="1">sql</numIndex>
+									</numIndex>
+									<numIndex index="15">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.tex</numIndex>
+										<numIndex index="1">tex</numIndex>
+									</numIndex>
+									<numIndex index="16">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.wiki</numIndex>
+										<numIndex index="1">wiki</numIndex>
+									</numIndex>
+									<numIndex index="17">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.xml</numIndex>
+										<numIndex index="1">xml</numIndex>
+									</numIndex>
+									<numIndex index="18">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.xsl</numIndex>
+										<numIndex index="1">xsl</numIndex>
+									</numIndex>
+									<numIndex index="19">
+										<numIndex index="0">LLL:EXT:google_code_prettify/Resources/Private/Language/locallang.xml:flexform.settings.language.yaml</numIndex>
+										<numIndex index="1">yaml</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.language>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

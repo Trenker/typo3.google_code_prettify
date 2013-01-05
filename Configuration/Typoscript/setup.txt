@@ -1,0 +1,32 @@
+plugin.tx_googlecodeprettify {
+
+	persistence {
+		classes {
+
+		}
+	}
+	view {
+		templateRootPath = {$plugin.tx_googlecodeprettify.view.templateRootPath}
+		partialRootPath = {$plugin.tx_googlecodeprettify.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_googlecodeprettify.view.layoutRootPath}
+	}
+
+	settings {
+	}
+}
+
+lib.tx_googlecodeprettify = USER
+lib.tx_googlecodeprettify {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	extensionName = GoogleCodePrettify
+	pluginName = Pi1
+	vendorName = GeorgGrossberger
+
+	settings {
+		code =
+		language =
+	}
+}
+
+# Just in case
+tt_content.list.20.googlecodeprettify_pi1 < lib.tx_googlecodeprettify
