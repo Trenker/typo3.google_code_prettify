@@ -38,14 +38,31 @@ class PrettyPrint implements SingletonInterface {
 	protected $addedPlugins = array();
 
 	/**
+	 * The page renderer to which we add the JS and CSS
+	 *
+	 * @inject
+	 * @var \TYPO3\CMS\Core\Page\PageRenderer
+	 */
+	protected $pageRenderer;
+
+	/**
+	 * @param \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer
+	 */
+	public function injectPageRenderer(\TYPO3\CMS\Core\Page\PageRenderer $pageRenderer) {
+		$this->pageRenderer = $pageRenderer;
+	}
+
+	/**
 	 * Getter for the page renderer
 	 *
 	 * @return \TYPO3\CMS\Core\Page\PageRenderer
 	 */
 	protected function getPageRenderer() {
-		// Since it is a singleton, this will work in most cases
-		// @todo: check if we should use something different
-		return GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Page\\PageRenderer');
+		// Fallback in case no DI was issued
+		if (!$this->pageRenderer) {
+			$this->injectPageRenderer(GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Page\\PageRenderer'));
+		}
+		return $this->pageRenderer;
 	}
 
 	/**
