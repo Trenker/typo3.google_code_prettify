@@ -59,3 +59,9 @@ _______
 		}';
 
 		echo $this->prettyPrint->prettyPrint($code);
+
+
+Available Language Codes
+________________________
+
+For a full list of available Language codes, please take a look into the class *Languages* directly in the *Classes* folder.
