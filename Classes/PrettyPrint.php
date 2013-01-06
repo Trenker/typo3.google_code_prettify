@@ -43,7 +43,7 @@ class PrettyPrint implements SingletonInterface {
 	 * @return \TYPO3\CMS\Core\Page\PageRenderer
 	 */
 	protected function getPageRenderer() {
-		// Since it is a singleton, this should work
+		// Since it is a singleton, this will work in most cases
 		// @todo: check if we should use something different
 		return GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Page\\PageRenderer');
 	}
@@ -58,6 +58,10 @@ class PrettyPrint implements SingletonInterface {
 	 */
 	public function prettyPrint($code, $language = NULL) {
 
+		if (empty($code) || !is_string($code)) {
+			throw new \InvalidArgumentException('Code must be a not empty string');
+		}
+
 		if ($language !== NULL && !$this->isAllowedLanguageKey($language)) {
 			throw new \InvalidArgumentException('Given language not supported');
 		}
@@ -67,7 +71,7 @@ class PrettyPrint implements SingletonInterface {
 			$pathPrefix = ExtensionManagementUtility::siteRelPath('google_code_prettify');
 			$pageRenderer->addCssFile( $pathPrefix . 'Resources/Public/Stylesheet/prettify.css' );
 			$pageRenderer->addJsFooterFile( $pathPrefix . 'Resources/Public/Javascript/prettify.js' );
-			$pageRenderer->addJsFooterInlineCode(__CLASS__, '(function(){function a(){prettyPrint()}if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a);else{var b=window.onload||function(){};window.onload=function(){b(),a()}}})();');
+			$pageRenderer->addJsFooterInlineCode('google_code_prettify', '(function(){function a(){prettyPrint()}if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a);else{var b=window.onload||function(){};window.onload=function(){b(),a()}}})();');
 			$this->assetsAdded = TRUE;
 		}
 
@@ -99,31 +103,7 @@ class PrettyPrint implements SingletonInterface {
 	 * @return boolean
 	 */
 	protected function isAllowedLanguageKey($language) {
-		return in_array($language, array(
-			'bsh',
-			'c',
-			'cc',
-			'cpp',
-			'cs',
-			'csh',
-			'cyc',
-			'cv',
-			'htm',
-			'html',
-			'java',
-			'js',
-			'm',
-			'mxml',
-			'perl',
-			'pl',
-			'pm',
-			'py',
-			'rb',
-			'sh',
-			'xhtml',
-			'xml',
-			'xsl'
-		), TRUE) || $this->needsJavascriptPlugin($language);
+		return in_array($language, Languages::getAllLanguages(), TRUE);
 	}
 
 	/**
@@ -133,25 +113,6 @@ class PrettyPrint implements SingletonInterface {
 	 * @return boolean
 	 */
 	protected function needsJavascriptPlugin($language) {
-		return in_array($language, array(
-			'apollo',
-			'clj',
-			'css',
-			'go',
-			'hs',
-			'lisp',
-			'lua',
-			'ml',
-			'n',
-			'proto',
-			'scala',
-			'sql',
-			'tex',
-			'vb',
-			'vhdl',
-			'wiki',
-			'xq',
-			'yaml'
-		), TRUE);
+		return in_array($language, Languages::getPluginLanguages(), TRUE);
 	}
 }
