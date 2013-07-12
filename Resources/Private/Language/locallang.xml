@@ -32,5 +32,12 @@
 			<label index="plugin.title">Prettified Code</label>
 			<label index="plugin.description">Insert code and let it be prettified by the a lightweight client library.</label>
 		</languageKey>
+		<languageKey index="default" type="array">
+			<label index="flexform.settings">Einstellungen</label>
+			<label index="flexform.settings.language">Sprache</label>
+			<label index="flexform.settings.language.0">Automatisch Ermitteln</label>
+			<label index="plugin.title">Schöner Code</label>
+			<label index="plugin.description">Codeschnipsel in einer gut lesbaren Form darstellen.</label>
+		</languageKey>
 	</data>
 </T3locallang>
